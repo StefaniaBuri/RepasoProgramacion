@@ -59,7 +59,7 @@ arcoiris(["magenta"]);
         }
     }
     
-    par([1,2,3,4,5,6]);
+    //par([1,2,3,4,5,6]);
     
     //opcion2
     function findPar(arr1:number []){
@@ -72,23 +72,23 @@ arcoiris(["magenta"]);
             }
         }
     }
-    console.log(findPar([2,3,5,7]));
+console.log(findPar([2,3,5,7]));
 
 //>>>>>>>>>>>>>>>>>>>>>> PUNTO 7 - FUNCION devolver true si todos los nombres empiezan por "m"<<<<<<<<<<<<<<<<<<<<<<
 
 function nombres(arrNombre:string[]): Boolean{
     let nombM: boolean = true;
+    
     for(let i = 0; i < arrNombre.length; i++){
-        if(arrNombre[i][0] ==="m"){
-            nombM = true;      
-        }else{
-            nombM = false;
-        }
+        if(arrNombre[i][0] !="m" ){
+            nombM = false; 
+            break;     
+        }    
     }
     return nombM;
 }
 
-console.log(nombres(["javier", "oscar", "marta"]));
+console.log(nombres(["cmar", "maria", "marta"]));
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PUNTO 9 - Funcion par o impar <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
